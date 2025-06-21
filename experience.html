@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Personal Resume </title>
+  <link rel=" stylesheet" href="aboutme.css"/>
+  <link rel="icon" href="https://png.pngtree.com/png-vector/20240710/ourmid/pngtree-an-islamic-cartoon-png-image_12994354.png" type="image/png">
+</head>
+
+
+<body>
+  <header>
+    <h1>~~MY EXPERIENCE~~</h1>
+  </header>
+
+  <nav>
+     <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="family.html">Family</a></li>
+      <li><a href="experience.html">Work Experience</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+<div id="clock">Loading time...</div>
+
+<script>
+  function updateClock() {
+    const now = new Date();
+
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    // Format 2 digit
+    hours = hours < 10 ? "0" + hours : hours;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    // Format tarikh
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const dateString = now.toLocaleDateString('ms-MY', options);
+
+    const timeString = hours + ":" + minutes + ":" + seconds;
+    document.getElementById("clock").innerText = "⏰ " + timeString + " | " + dateString;
+  }
+
+  setInterval(updateClock, 1000);
+  updateClock();
+</script>
+
+  
+  <main>
+   
+
+
+<section id="experience">
+  <h2>🌸 Work Experience</h2>
+
+  <table style="width:100%">
+   <tr style="background-color: #c28ea3;">
+        <th style="padding: 10px;">IMAGE</th>
+        <th style="padding: 10px;">INFORMATION</th>
+      </tr>
+  <tr>
+    <td style="padding: 10px; text-align: center;">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtqGUcQw4I34WJ4RZ-iLVeT2Dd9vkjyflhzSLp_FR__UgXBug8K767pIskT4l58lJ2UbTTDH5JD1AHX_spEC8WNtkfGwBzNaJnka8bx1qqJ9C5D2boOlyeSbWvsWSM88FPdm4CxSToR9s/s640/DSC04453.jpg" 
+               alt="Pertubuhan Perladang Kawasan Parit Sulong" width="100">
+        </td>
+        <td style="padding: 10px; text-align: left; ">
+          <h3>Intern in Pertubuhan Perladang Kawasan Parit Sulong</h3>
+          <p><strong>Location:</strong> Parit Sulong, Batu Pahat Johor</p>
+          <p><strong>Period:</strong>  10 Februari 2025 - 4 April 2025</p>
+          <ul>
+            <li>Manage digital and physical archival materials</li>
+            <li>Record data in the e-Finding Aid system</li>
+            <li>Assist in historical exhibitions</li>
+          </ul>
+          <a href = "https://www.lpp.gov.my/article/view/pertubuhan-peladang-kawasan-di-johor">Click here to know about PPKPS</a> 
+        </td>
+  </tr>
+  <tr>
+    <td style="padding: 10px; text-align: center;">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzNye16-wuvUzzNPc0r6AdYthBHRaJHO2x76BcBvtFKyhxL59EJP274cHhqaykz-dZJDSGzCyQV7cZ1BFRL4WuZZgn1vgt-NnCvypzVFeJqN3Qa6q7ygBCzERSCpXKrMvzfoTrcPXk49s/s1600/venture.jpg" 
+               alt="Poster Design" width="100">
+        </td>
+        <td style="padding: 10px; text-align: left;">
+          <h3>Work at Venture Sdn. bhd,</h3>
+          <p><strong>Period:</strong> 3 month</p>
+          <p><strong>Position:</strong> Operator</p>
+          <ul>
+            <li>take care of the entry and exit of items in the machine</li>
+            <li>Installing small components on items</li>
+          </ul>
+          <a href = "https://businessreport.ctoscredit.com.my/oneoffreport_api/single-report/malaysia-company/0090782P/VENTURE-CORPORATION-M-SDN-BHD-">Click here to know about Venture Factory</a> 
+        </td>
+  </tr>
+</table>
+</section>
+
+
+   
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Haziqah Roslan. All rights reserved. For educational purpose</p>
+  </footer>
+</body>
+</html>

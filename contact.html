@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Personal Resume </title>
+  <link rel=" stylesheet" href="aboutme.css"/>
+  <link rel="icon" href="https://png.pngtree.com/png-vector/20240710/ourmid/pngtree-an-islamic-cartoon-png-image_12994354.png" type="image/png">
+</head>
+
+<body>
+  <header>
+    <h1>~~MY CONTACT~~</h1>
+
+  </header>
+
+  <nav>
+     <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="family.html">Family</a></li>
+      <li><a href="experience.html">Work Experience</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div id="clock">Loading time...</div>
+
+<script>
+  function updateClock() {
+    const now = new Date();
+
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    // Format 2 digit
+    hours = hours < 10 ? "0" + hours : hours;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    // Format tarikh
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const dateString = now.toLocaleDateString('ms-MY', options);
+
+    const timeString = hours + ":" + minutes + ":" + seconds;
+    document.getElementById("clock").innerText = "⏰ " + timeString + " | " + dateString;
+  }
+
+  setInterval(updateClock, 1000);
+  updateClock();
+</script>
+
+  <main>
+ 
+    <section id="contact">
+  <h2>🌸 Contact</h2>
+  <div style="display: flex; flex-direction: column; gap: 10px; font-size: 16px;">
+
+    <div style="display: flex; align-items: center;">
+      <img1 src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone" width="0.1" height="o.1" style="margin-right: 1px;">
+      <span>📞 Phone: <a href="tel:+60123456789">+60 13-2264703</a></span>
+    </div>
+
+    <div style="display: flex; align-items: center;">
+      <img1 src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="24" height="24" style="margin-right: 10px;">
+      <span> 📸 Instagram: <a href="https://www.instagram.com/hazie_iqahh/" target="_blank">@ziqh_rsln</a></span>
+    </div>
+
+    <div style="display: flex; align-items: center;">
+      <img1 src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="24" height="24" style="margin-right: 10px;">
+      <span> 📱 Facebook: <a href="https://www.facebook.com/nurhaziqah.nurhaziqah.946" target="_blank">ziqh.roslan</a></span>
+    </div>
+
+    <div style="display: flex; align-items: center;">
+      <img1 src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Gmail" width="24" height="24" style="margin-right: 10px;">
+      <span> 📧  Gmail: <a href="mailto:haziqahrsln04@gmail.com" target="_blank">haziqahrsln04@gmailcom</a></span>
+    </div>
+  </div>
+</section>
+
+<section class="form-section">
+    <!-- 🖼️ Thumbnail image -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQono49G_laS77s6h8zNY-lqPPaApDF-8gUcw&s" alt="Thumbnail">
+
+    <h2>📩 INFORMATION FORM</h2>
+
+    <form onsubmit="return submitForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="emel">Emel:</label>
+      <input type="email" id="emel" name="emel" required>
+
+      <label for="nophone">No Phone:</label>
+      <input type="phone" id="nophone" name="nophone" pattern="[0-9]{10,12}" required>
+
+      <button type="submit">SUBMIT</button>
+    </form>
+  </section>
+
+   <script>
+    function submitForm() {
+      alert("Thank you! Your information has been sent =)");
+      return false;
+    }
+  </script>
+
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Haziqah Roslan. All rights reserved. For educational purpose</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Personal Resume </title>
+  <link rel=" stylesheet" href="aboutme.css"/>
+  <link rel="icon" href="https://png.pngtree.com/png-vector/20240710/ourmid/pngtree-an-islamic-cartoon-png-image_12994354.png" type="image/png">
+</head>
+
+<body>
+  <header>
+    <h1>~~MY EDUCATION~~</h1>
+  </header>
+
+  <nav>
+     <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="family.html">Family</a></li>
+      <li><a href="experience.html">Work Experience</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div id="clock">Loading time...</div>
+
+<script>
+  function updateClock() {
+    const now = new Date();
+
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    // Format 2 digit
+    hours = hours < 10 ? "0" + hours : hours;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    // Format tarikh
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const dateString = now.toLocaleDateString('ms-MY', options);
+
+    const timeString = hours + ":" + minutes + ":" + seconds;
+    document.getElementById("clock").innerText = "⏰ " + timeString + " | " + dateString;
+  }
+
+  setInterval(updateClock, 1000);
+  updateClock();
+</script>
+
+
+  <main>
+   
+
+   <section id="education">
+  <h2>🌸 Education</h2>
+
+  <div class="education-container">
+    
+    <div class="edu-card green">
+      <div class="edu-content">
+        <img class="edu-image" src="https://johor.uitm.edu.my/images/segamat/kampus/admin.jpg" alt="UiTM Segamat">
+        <div class="edu-text">
+          <h3>🎓 UiTM</h3>
+          <p><strong>Program:</strong> Diploma in Information Management</p>
+          <p><strong>Year:</strong> 2021 - 2025</p>
+          <p><strong>Location:</strong> UiTM Segamat, Johor</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="edu-card orange">
+      <div class="edu-content">
+        <img class="edu-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/SMK_Dato%27_Bentara_Luar.jpg/250px-SMK_Dato%27_Bentara_Luar.jpg" alt="SMK Dato' Bentara Luar">
+        <div class="edu-text">
+          <h3>🏫 SMK Dato' Bentara Luar</h3>
+          <p><strong>Level:</strong> Secondary School</p>
+          <p><strong>Year:</strong> 2017 - 2021</p>
+          <p><strong>Location:</strong> Batu Pahat, Johor</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="edu-card purple">
+      <div class="edu-content">
+        <img class="edu-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoxKwM5uj5jAUW-qXWNjQ8o9uToxN0pDb52Q&s" alt="SK Parit Sulong">
+        <div class="edu-text">
+          <h3>🏫 SK Parit Sulong</h3>
+          <p><strong>Level:</strong> Primary School</p>
+          <p><strong>Year:</strong> 2011 - 2016</p>
+          <p><strong>Location:</strong> Parit Sulong, Johor</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="edu-card pink">
+      <div class="edu-content">
+        <img class="edu-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaLf1zHAAOV5VcgcFCMQ6ZfdfW87z3SOeSAQ&s" alt="Tadika Kemas Denai Utara">
+        <div class="edu-text">
+          <h3>👶 Tadika KEMAS Denai Utara</h3>
+          <p><strong>Level:</strong> Kindergarten</p>
+          <p><strong>Year:</strong> 2009 - 2010</p>
+          <p><strong>Location:</strong> Denai Utara, Johor</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Haziqah Roslan. All rights reserved. For educational purpose</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Personal Resume</title>
+  <link rel="stylesheet" href="aboutme.css" />
+  <link rel="icon" href="https://png.pngtree.com/png-vector/20240710/ourmid/pngtree-an-islamic-cartoon-png-image_12994354.png" type="image/png" />
+</head>
+<body>
+
+
+  <!-- Header -->
+  <header>
+    <h1>~~MY PAGE~~</h1>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="family.html">Family</a></li>
+      <li><a href="experience.html">Work Experience</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+<div id="clock">Loading time...</div>
+
+<script>
+  function updateClock() {
+    const now = new Date();
+
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    // Format 2 digit
+    hours = hours < 10 ? "0" + hours : hours;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    // Format tarikh
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const dateString = now.toLocaleDateString('ms-MY', options);
+
+    const timeString = hours + ":" + minutes + ":" + seconds;
+    document.getElementById("clock").innerText = "⏰ " + timeString + " | " + dateString;
+  }
+
+  setInterval(updateClock, 1000);
+  updateClock();
+</script>  
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- About Me / Biodata -->
+    <section class="about">
+      <h2 class="biodata-title">🌸 BIODATA</h2>
+      <div class="about-container">
+        <div class="profile-info">
+          <p><strong>Name:</strong> Nurhaziqah binti Roslan</p>
+          <p><strong>Age:</strong> 21 Years</p>
+          <p><strong>Gender:</strong> Female</p>
+          <p><strong>Status:</strong> Single</p>
+          <p><strong>Date of Birth:</strong> 20 January 2004</p>
+          <p><strong>Place of Birth:</strong> Hospital Sultanah Aminah, Johor Bahru</p>
+          <p><strong>Address:</strong> TL4/1 Kampung Parit Yusof Laut, 83500, Johor</p>
+        </div>
+        <div class="profile-img">
+          <img src="aboutme gambar1.png" alt="Profile Image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section class="container hobbies-section">
+      <h2>📽️🎧📚 My Hobbies</h2>
+      <div class="hobbies-container">
+        <div class="hobby-box">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwiGZMfirP6p6G9qpLaT0Zibj-qeIGycLtAA&s" alt="Movie Munafik " width="235" height="274" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTghSjibFvBzaipHWsqGiEctR_mSqYU_3os8ZrNL57QqJdhuSq11EZNd-8T3LZaxWrbab8&usqp=CAU" alt="Movie Paskal" width="235" height="274" />
+          <p>Watch movies </p>
+          <ol>
+            <li>Enjoy genres like fantasy, action, thriller,horror .</li>
+            <li>Rarely watch horror.</li>
+            <li>Watch from countries like Malaysia, Korea, China.</li>
+          </ol>
+        </div>
+        <div class="hobby-box">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT03G8Fx0iQ7RQPJchmg-vNXjMKQRvjCDNgAg&s" alt="Listen Music" width="235" height="274" />
+          <div class="hobby-box">
+</div>
+          <p>Listen to songs </p>
+          <ol>
+            <li>Favourites: hip hop, pop, retro pop.</li>
+            <li>Sometimes classical for productivity.</li>
+          </ol>
+        </div>
+        <div class="hobby-box">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCkzK9Xzx3TM1mv-4jMlJHznJMuXpMQfuy5Q&s" alt="Manhwa Comic" width="235" height="274" />
+          <img src="https://down-my.img.susercontent.com/file/my-11134207-7rasl-m9pqpkc9ihgy18" alt="Novel Qaid" width="235" height="274" />
+          <p>Reading </p>
+          <ol>
+            <li>Love manga, manhwa, and novels.</li>
+            <li>read in physical and online novel or comic.</li>
+            <li>Read horror, fantasy, and angst genres.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="comfort-section">
+    <h2>Favourite Food 🎂🍛</h2>
+    <div class="comfort-container">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv2FOmygSXd6D3vsYR3ihgMXuj4yF0afZsPA&s" alt="Porrige">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIYlGwLdGtD9Tj1ra4PHPRb_veFm7_YcSaNw&s" alt="TomYum">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV052btvjAvFdScyMsTYuVPqF3B00H1Z0LBQ&s" alt="Chocolate cake">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD8Nvj8T9s5KhQKaR9cdXMuA23Wmkjaug08g&s" alt="Brownie Cookie">
+      
+    </div>
+<br><br>
+    <h2>Favourite Drink 🥛🍹</h2>
+    <div class="comfort-container">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBQvmAPEkEpShZqR0hv2nEXAnDdDkfiH1WAg&s" alt="Watermalon Juice">
+      <img src="https://southernrockseafood.com.my/cdn/shop/files/Screenshot2024-11-03180834.png?v=1730628541&width=480" alt="Apple Juice">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMkztqvnH5aoqa4H8I3F5HObRHTm742Ltj4w&s" alt="Orange Juice">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwKfdUMDDdJfXXDOKkWv2N40JnHWtScW_Sog&s" alt="Iced Latte">
+      
+    </div>
+  </section>
+
+    <section id="contact">
+  <h2> 🎶 My Playlist</h2>
+  <iframe width="420" height="345" src="https://www.youtube.com/embed/OjDuQ7O9XUo?autoplay=1&mute=1">
+</iframe>
+<audio controls>
+  <source src="boboiboy.mp4" type="audio/ogg">
+  <source src="boboiboy.mp4" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</section>
+
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Haziqah Roslan. All rights reserved. For educational purpose</p>
+  </footer>
+
+</body>
+</html>
